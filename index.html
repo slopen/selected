@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>selected.js</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<meta name="viewport" content="width=device-width">
+	
+	<link rel="stylesheet" type="text/css" href="selected.css">
+
+	<style type="text/css">
+		#main{
+			width:70%;
+			margin:20px auto;
+		}
+
+		#main select{
+			width:400px;
+		}
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.2.1/lodash.compat.min.js"></script>
+	<script src="selected.js"></script>
+	<script src="demo.js"></script>
+
+</head>
+
+<body>
+	<div id="main">
+
+		<h3>single select:</h3>
+		<p class="single">
+			<select data-placeholder="select some" data-empty-allowed="true">
+				<option></option>
+                <option value="1">value 1</option>
+                <option value="2">Lorem</option>
+                <option value="3">ipsum</option>
+                <option value="4">dolor</option>
+                <option value="5">sit</option>
+			</select>
+	    </p>
+
+	    <h3>multiple select:</h3>
+	    <p class="multiple">
+			<select multiple="multiple">
+                <option value="1">value 1</option>
+                <option value="2">Lorem</option>
+                <option value="3">ipsum</option>
+                <option value="4">dolor</option>
+                <option value="5">sit</option>  	
+  			</select>
+		</p>
+    </div>
+</body>
+
+</html>
